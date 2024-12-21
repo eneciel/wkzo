@@ -8,6 +8,11 @@ html, body {
 
 }
 
+@font-face {
+    font-family: "Reve";
+    src: url(../source/ManbowLines.woff);
+}
+
 #container {
     width: 50%;
 }
@@ -18,7 +23,21 @@ html, body {
     }
 }
 
-h1, h2, h3, h4, h5, h6, p, small {
+h1 {
+    color: var(--primary);
+    background: none;
+    font-family: "Reve";
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: 10;
+    text-align: center;
+    width: 50%;
+    border-left: 3px double var(--primary);
+    border-right: 3px double var(--primary);
+    padding-left: 16px;
+}
+
+h2, h3, h4, h5, h6, p, small {
     font-family: "RIDIBatang";
 }
 
@@ -102,8 +121,8 @@ small {
 #grey {
     h3, h4 {
         background-color: #ffffff08;
-        border-left: 2px solid #fff;
-        border-right: 2px solid #fff;
+        border-top: 2px double var(--G05);
+        border-bottom: 2px double var(--G05);
     }
 }
 

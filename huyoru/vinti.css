@@ -1,0 +1,112 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    font-family: "RIDIBatang";
+    --primary: #2ca50b;
+
+}
+
+#container {
+    width: 50%;
+}
+
+@media (orientation:portrait) {
+    #container {
+        width: 90%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+    font-family: "RIDIBatang";
+}
+
+h3, h4 {
+    width: 60%;
+    text-align: center;
+    border-top: 3px double var(--primary);
+    border-bottom: 3px double var(--primary);
+    padding: 8px 0;
+}
+
+h4 {
+    max-height: 3em;
+}
+
+h5 {
+    background-color: #30b7ff50;
+    padding: 6px 16px;
+}
+
+h6 {
+    background-color: #e53c3c50;
+    padding: 6px 16px;
+}
+
+p {
+    color: var(--G07);
+}
+
+small {
+    color: var(--G05);
+}
+
+.section p {
+    margin-top: 8px;
+}
+
+#taphead {
+    display: flex;
+}
+
+#taphead h4 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taphead > div {
+    flex: 3;
+    margin-left: 16px;
+}
+
+@media (orientation:portrait) {
+    .row-start {
+        flex-direction: column;
+    }
+    #taphead h4 {
+        width: 100%;
+    }
+    #taphead > div {
+        margin: 0;
+        margin-top: 8px;
+    }
+}
+
+#blue {
+    h3, h4 {
+        border-top: 3px double #30b7ff;
+        border-bottom: 3px double #30b7ff;
+    }
+}
+
+#red {
+    h3, h4 {
+        border-top: 3px double #e53c3c;
+        border-bottom: 3px double #e53c3c;
+    }
+}
+
+#grey {
+    h3, h4 {
+        background-color: #ffffff08;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+    }
+}
+
+#characteristic small {
+    text-align: center;
+}

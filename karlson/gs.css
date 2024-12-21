@@ -1,0 +1,127 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    font-family: "Galmuri";
+    --primary: #759f47;
+
+}
+
+@font-face {
+    font-family: "GS";
+    src: url(../source/ChangwonDangamAsac-Bold_0712.ttf);
+}
+
+#container {
+    width: 50%;
+}
+
+@media (orientation:portrait) {
+    #container {
+        width: 90%;
+    }
+}
+
+h1 {
+    color: var(--primary);
+    background: none;
+    font-family: "GS";
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+    width: 75%;
+    border: 6px dotted var(--primary);
+    border-radius: 999px;
+}
+
+h2, h3, h4, h5, h6, p, small {
+    font-family: "Galmuri";
+}
+
+h3, h4 {
+    color: white;
+    width: 50%;
+    height: 2em;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 999px;
+}
+
+h5 {
+    background-color: #30b7ff50;
+    border-radius: 999px;
+    padding: 6px 16px;
+}
+
+h6 {
+    background-color: #e53c3c50;
+    border-radius: 999px;
+    padding: 6px 16px;
+}
+
+p {
+    color: var(--G07);
+}
+
+small {
+    color: var(--G05);
+}
+
+.section p {
+    margin-top: 8px;
+}
+
+#taphead {
+    display: flex;
+}
+
+#taphead h4 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taphead > div {
+    flex: 3;
+    margin-left: 16px;
+}
+
+@media (orientation:portrait) {
+    .row-start {
+        flex-direction: column;
+    }
+    #taphead h4 {
+        width: 100%;
+    }
+    #taphead > div {
+        margin: 0;
+        margin-top: 8px;
+    }
+}
+
+#blue {
+    h3, h4 {
+        background-color: #30b7ff;
+    }
+}
+
+#red {
+    h3, h4 {
+        background-color: #e53c3c;
+    }
+}
+
+#grey {
+    h3, h4 {
+        background-color: var(--G06);
+    }
+}
+
+#characteristic small {
+    text-align: center;
+}

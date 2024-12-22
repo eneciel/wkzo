@@ -35,6 +35,21 @@ h1 {
     border-radius: 999px;
 }
 
+@media (orientation:portrait) {
+    h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width) {
+    
+}
+
 h2, h3, h4, h5, h6, p, small {
     font-family: "Galmuri";
 }

@@ -234,6 +234,7 @@ details {
 
 .row-start {
     display: flex;
+    align-items: start;
 }
 
 .fill {
